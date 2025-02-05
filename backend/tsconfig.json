@@ -1,0 +1,17 @@
+{
+  "extends": "../tsconfig.json", // Extend the parent config
+  "compilerOptions": {
+    "composite": true,           // Required for project references
+    "strict": true,
+    "module": "CommonJS",        // Use CommonJS for Node.js
+    "target": "ES2022",          // Target modern JavaScript
+    "outDir": "./dist",          // Output directory
+    "rootDir": "./src",          // Source directory
+    "baseUrl": ".",              // Base URL for module resolution
+    "paths": {
+      "@/*": ["./src/*"]         // Path aliases (optional)
+    }
+  },
+  "include": ["src/**/*"],       // Include all files in the src directory
+  "exclude": ["node_modules"]    // Exclude node_modules
+}

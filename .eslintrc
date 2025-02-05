@@ -1,0 +1,16 @@
+{
+    "overrides": [
+        {
+            "files": ["backend/**/*.ts"],
+            "rules": {
+                "backend-specific-rule": "error"
+            }
+        },
+        {
+            "files": ["frontend/**/*.ts"],
+            "rules": {
+                "frontend-specific-rule": "error"
+            }
+        }
+    ]
+}

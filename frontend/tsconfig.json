@@ -1,0 +1,18 @@
+{
+    "extends": "../tsconfig.json",   // Extend the parent config
+    "compilerOptions": {
+        "composite": true,           // Required for project references
+        "strict": true,
+        "jsx": "react-native",       // Use "react" for React web projects
+        "module": "ESNext",          // Use ESM for frontend
+        "target": "ES2022",          // Target modern JavaScript
+        "outDir": "./dist",          // Output directory
+        "rootDir": "./src",          // Source directory
+        "baseUrl": ".",              // Base URL for module resolution
+        "paths": {
+      "@/*": ["./src/*"]             // Path aliases (optional)
+    }
+  },
+  "include": ["src/**/*"],           // Include all files in the src directory
+  "exclude": ["node_modules"]        // Exclude node_modules
+}
